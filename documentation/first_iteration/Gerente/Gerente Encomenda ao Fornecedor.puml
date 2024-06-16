@@ -1,0 +1,18 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. O Gerente seleciona a opção realizar encomenda
+Gerente -> Sistema: 2. Seleciona os produtos desejados
+Sistema -> Sistema: 2.1 Cria a encomenda
+Sistema --> Gerente: 3. Envio de mensagem
+
+alt Encomenda Realizada: true
+     Sistema --> Gerente: Retorna mensagem de sucesso
+
+else Encomenda Realizada: false
+     Sistema --> Gerente: Retorna mensagem de erro
+
+end
+@enduml

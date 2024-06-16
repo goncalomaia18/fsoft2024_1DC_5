@@ -1,0 +1,15 @@
+@startuml
+actor Fornecedor
+participant Sistema
+
+
+Fornecedor -> Sistema: 1. Encerrar Sessão
+
+alt Sessão encerrada: true
+     Sistema --> Fornecedor: Retorna Sucesso
+
+else Sessão encerrada: false
+     Sistema --> Fornecedor: Retorna erro
+
+end
+@enduml

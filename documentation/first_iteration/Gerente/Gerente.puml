@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+actor "Gerente" as gr
+rectangle  {
+  usecase "Iniciar Sessão" as UC1
+  usecase "Adicionar Material" as UC2
+  usecase "Remover Material" as UC3
+  usecase "Ver Inventário" as UC4
+  usecase "Ver Mecânicos" as UC
+  usecase "Realizar Encomendas ao Fornecedor" as UC5
+  usecase "Ver Encomendas ao Fornecedor" as UC6
+  usecase "Adicionar Mecânico" as UC7
+  usecase "Remover Mecânico" as UC8
+  usecase "Adicionar Fornecedor" as UC9
+  usecase "Remover Fornecedor" as UC10
+  usecase "Ver Mecânicos" as UC11
+  usecase "Ver Fornecedores" as UC12
+  usecase "Encerrar Sessão" as UC13
+}
+gr --> UC1
+gr --> UC2
+gr --> UC3
+gr --> UC4
+gr --> UC5
+gr --> UC6
+gr --> UC7
+gr --> UC8
+gr --> UC9
+gr --> UC10
+gr --> UC11
+gr --> UC12
+gr --> UC13
+@enduml

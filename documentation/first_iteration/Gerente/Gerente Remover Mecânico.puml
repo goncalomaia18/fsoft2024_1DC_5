@@ -1,0 +1,19 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. Seleciona a opção Remover Mecânico
+Gerente -> Sistema: 2. Seleciona o Mecânico
+Sistema -> Sistema: 2.1 Verifica se esse Mecânico existe.
+Sistema -> Sistema: 2.2 Remove o Mecânico da lista de trabalhadores.
+Sistema --> Gerente: 1.2 O sistema mostra uma mensagem
+
+alt Remover Mecânico: true
+     Sistema --> Gerente: Retorna mensagem de sucesso
+
+else Remover Mecânico: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

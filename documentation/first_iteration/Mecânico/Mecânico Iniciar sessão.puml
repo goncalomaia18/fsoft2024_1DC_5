@@ -1,0 +1,16 @@
+@startuml
+actor Mecânico
+participant Sistema
+
+
+Mecânico -> Sistema: 1. Insere o nome de utilizador e palavra-passe
+Sistema -> Sistema: 1.1 Verifica se as credenciais são verdadeiras
+
+alt Sessão iniciada
+     Sistema --> Mecânico: Retorna sucesso
+
+else Sessão não iniciada
+     Sistema --> Mecânico: Pede para reintroduzir as credenciais
+
+end
+@enduml

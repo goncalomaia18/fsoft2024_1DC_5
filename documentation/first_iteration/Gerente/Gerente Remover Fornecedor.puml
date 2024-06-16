@@ -1,0 +1,19 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. Seleciona a opção Remover Fornecedor
+Gerente -> Sistema: 2. Seleciona o Fornecedor
+Sistema -> Sistema: 2.1 Verifica se esse Fornecedor existe.
+Sistema -> Sistema: 2.2 Remove o Fornecedor da lista de trabalhadores.
+Sistema --> Gerente: 1.2 O sistema mostra uma mensagem
+
+alt Remover Fornecedor: true
+     Sistema --> Gerente: Retorna mensagem de sucesso
+
+else Remover Fornecedor: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

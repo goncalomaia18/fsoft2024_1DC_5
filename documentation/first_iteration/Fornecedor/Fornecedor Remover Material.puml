@@ -1,0 +1,17 @@
+@startuml
+actor Fornecedor
+participant Sistema
+
+
+Fornecedor -> Sistema: 1. Remove um material ao inventário
+Sistema -> Sistema: 1.1 Verifica se existe esse material no inventário
+Sistema --> Fornecedor: 1.2 O sistema mostra uma mensagem
+
+alt Remove Material: true
+     Sistema --> Fornecedor: Retorna mensagem de sucesso
+
+else Remove Material: false
+     Sistema --> Fornecedor: Retorna erro
+
+end
+@enduml

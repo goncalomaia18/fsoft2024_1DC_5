@@ -1,0 +1,17 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. Adiciona um material ao inventário
+Sistema -> Sistema: 1.1 Verifica se já existe esse material no inventário
+Sistema --> Gerente: 1.2 O sistema mostra uma mensagem
+
+alt Adiciona Material: true
+     Sistema --> Gerente: Retorna mensagem de sucesso
+
+else Adiciona Material: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

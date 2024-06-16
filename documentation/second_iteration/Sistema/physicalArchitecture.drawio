@@ -1,0 +1,16 @@
+<mxfile host="app.diagrams.net" modified="2024-04-28T13:28:05.323Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="8RJ3qLMjXnMrBWRBmmqZ" version="24.2.1" type="device">
+  <diagram name="Página-1" id="nSJW42JzjoJTWQ4R3EQr">
+    <mxGraphModel dx="1674" dy="746" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UAFtw87nYwWiY3ImNvUS-2" value="PC" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="370" y="190" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UAFtw87nYwWiY3ImNvUS-3" value="Inventory Manager" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="240" width="110" height="55" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

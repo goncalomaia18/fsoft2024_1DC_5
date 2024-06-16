@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor "Fornecedor" as fr
+rectangle  {
+  usecase "Iniciar Sessão" as UC1
+  usecase "Adicionar Material" as UC2
+  usecase "Remover Material" as UC3
+  usecase "Ver Inventário" as UC4
+  usecase "Ver Encomendas do Gerente" as UC5
+  usecase "Encerrar Sessão" as UC6
+}
+
+fr --> UC1
+fr --> UC2
+fr --> UC3
+fr --> UC4
+fr --> UC5
+fr --> UC6
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+actor Fornecedor
+participant Sistema
+
+
+Fornecedor -> Sistema: 1. Seleciona a opção Ver Encomendas do Gerente
+Sistema -> Sistema: 1.1 Verifica se existe encomendas do Gerente
+Sistema --> Fornecedor: 1.2 Mostra a lista de encomendas
+
+alt Sem Encomendas
+     Sistema --> Fornecedor: Mensagem de alerta para a não existência de encomendas
+
+else Erros
+     Sistema --> Fornecedor: Retorna Erro
+
+end
+@enduml

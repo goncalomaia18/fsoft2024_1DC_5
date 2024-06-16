@@ -1,0 +1,19 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. Seleciona a opção Adiciona Mecânico
+Gerente -> Sistema: 2. Escreve dados do Mecânico
+Sistema -> Sistema: 2.1 Verifica se esse Mecânico já existe.
+Sistema -> Sistema: 2.2 Adiciona o Mecânico à lista de trabalhadores.
+Sistema --> Gerente: 1.2 O sistema mostra uma mensagem
+
+alt Adiciona Mecânico: true
+     Sistema --> Gerente: Retorna mensagem de sucesso
+
+else Adiciona Mecânico: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

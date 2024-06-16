@@ -1,0 +1,19 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. Seleciona a opção Adiciona Fornecedor
+Gerente -> Sistema: 2. Escreve dados do Fornecedor
+Sistema -> Sistema: 2.1 Verifica se esse Fornecedor já existe.
+Sistema -> Sistema: 2.2 Adiciona o Fornecedor à lista de trabalhadores.
+Sistema --> Gerente: 1.2 O sistema mostra uma mensagem
+
+alt Adiciona Fornecedor: true
+     Sistema --> Gerente: Retorna mensagem de sucesso
+
+else Adiciona Fornecedor: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

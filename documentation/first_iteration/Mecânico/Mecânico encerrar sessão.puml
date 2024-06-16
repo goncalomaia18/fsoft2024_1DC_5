@@ -1,0 +1,15 @@
+@startuml
+actor Mecânico
+participant Sistema
+
+
+Mecânico -> Sistema: 1. Encerrar Sessão
+
+alt Sessão encerrada: true
+     Sistema --> Mecânico: Retorna Sucesso
+
+else Sessão encerrada: false
+     Sistema --> Mecânico: Retorna erro
+
+end
+@enduml

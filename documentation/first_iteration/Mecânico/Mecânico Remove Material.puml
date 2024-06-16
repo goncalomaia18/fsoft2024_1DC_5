@@ -1,0 +1,17 @@
+@startuml
+actor Mecânico
+participant Sistema
+
+
+Mecânico -> Sistema: 1. Remove um material ao inventário
+Sistema -> Sistema: 1.1 Verifica se existe esse material no inventário
+Sistema --> Mecânico: 1.2 O sistema mostra uma mensagem
+
+alt Remove Material: true
+     Sistema --> Mecânico: Retorna mensagem de sucesso
+
+else Remove Material: false
+     Sistema --> Mecânico: Retorna erro
+
+end
+@enduml

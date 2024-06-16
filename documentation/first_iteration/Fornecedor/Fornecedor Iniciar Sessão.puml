@@ -1,0 +1,16 @@
+@startuml
+actor Fornecedor
+participant Sistema
+
+
+Fornecedor -> Sistema: 1. Insere o nome de utilizador e palavra-passe
+Sistema -> Sistema: 1.1 Verifica se as credenciais são verdadeiras
+
+alt Sessão iniciada: true
+     Sistema --> Fornecedor: Retorna sucesso
+
+else Sessão iniciada: false
+     Sistema --> Fornecedor: Pede para reintroduzir as credenciais
+
+end
+@enduml

@@ -1,0 +1,65 @@
+@startuml
+participant "controller: Controller" as A
+participant "view: View" as B
+participant "viewLogin: ViewLogin" as C
+participant ":Utils" as D
+participant "model: Inventory Manager" as E
+participant "SupplierList: SupplierList" as F
+participant "materialList: MaterialList" as G
+
+A -> B: 1. menuBegin()
+activate A
+activate B
+return
+deactivate B
+
+A -> B: 2. menuLogin()
+activate B
+return
+deactivate B
+
+A -> C: 3. insertCredentials()
+activate C
+C -> D: 3.1 getString()
+activate D
+return username
+deactivate D
+C -> D: 3.2 getString()
+activate D
+return password
+deactivate D
+C -> "supplier: Supplier" ** : <<verify>>
+C --> A: supplier
+deactivate C
+A -> F: 4. Login
+activate F
+return menuSupplier()
+deactivate F
+A -> B: 5. menuSupplier()
+activate B
+return
+deactivate B
+A -> C: addMaterial()
+activate C
+C -> C: getDate()
+activate C
+deactivate C
+C -> D: getString()
+activate D
+return name
+C -> D: getString()
+activate D
+return category
+C -> D: getNumber()
+activate D
+return amount
+C -> "material: Material" ** : <<create>>
+C --> A: material
+deactivate C
+A -> E: 7. getMaterialList()
+activate E
+return materialList
+A -> G: 8. add(material)
+activate G
+return return
+@enduml

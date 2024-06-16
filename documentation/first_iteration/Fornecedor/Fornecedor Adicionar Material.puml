@@ -1,0 +1,17 @@
+@startuml
+actor Fornecedor
+participant Sistema
+
+
+Fornecedor -> Sistema: 1. Adiciona um material ao inventário
+Sistema -> Sistema: 1.1 Verifica se já existe esse material no inventário
+Sistema --> Fornecedor: 1.2 O sistema mostra uma mensagem
+
+alt Adiciona Material: true
+     Sistema --> Fornecedor: Retorna mensagem de sucesso
+
+else Adiciona Material: false
+     Sistema --> Fornecedor: Retorna erro
+
+end
+@enduml

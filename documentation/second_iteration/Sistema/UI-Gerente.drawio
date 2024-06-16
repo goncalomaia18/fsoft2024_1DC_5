@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" modified="2024-04-28T13:39:56.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="elUdWUu1OcSC7gbrrp_A" version="24.2.1" type="device">
+  <diagram name="Página-1" id="C-PClh7iX6JLdaMJABn4">
+    <mxGraphModel dx="1674" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1dmnMxwKKWMNMVrGBrF0-2" value="Menu Principal:&lt;br&gt;&lt;br&gt;&lt;div&gt;1 - Iniciar Sessão&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;0 - Sair" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="320" y="80" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-2" value="Menu Gerente:&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 - Gerir Inventário&lt;/div&gt;&lt;div&gt;2 - Gerir Mecânicos&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 - Gerir Fornecedores&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;0 - Terminar Sessão" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="80" y="320" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1dmnMxwKKWMNMVrGBrF0-2" target="olk4RV9NaSBeg0otqcRm-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="100" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="140" y="120" />
+            </Array>
+            <mxPoint x="180" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-4" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="olk4RV9NaSBeg0otqcRm-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.6117" y="-1" relative="1" as="geometry">
+            <mxPoint x="-20" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-5" value="Menu Gerir Inventário:&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;1 - Adicionar Produtos&lt;br&gt;&lt;div&gt;2 - Remover Produtos&lt;/div&gt;&lt;div&gt;3 - Ver Inventário&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;0 - Voltar" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;direction=east;" parent="1" vertex="1">
+          <mxGeometry x="560" y="320" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="olk4RV9NaSBeg0otqcRm-2" target="olk4RV9NaSBeg0otqcRm-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="340" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="430" y="360" />
+              <mxPoint x="430" y="360" />
+            </Array>
+            <mxPoint x="350" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-7" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="olk4RV9NaSBeg0otqcRm-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.6117" y="-1" relative="1" as="geometry">
+            <mxPoint x="86" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-8" value="Menu Gerir Mecânicos:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 - Adicionar Mecânico&lt;/div&gt;&lt;div&gt;2 - Remover Mecânico&lt;/div&gt;&lt;div&gt;3- Ver Mecânicos&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;0 - Voltar" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="80" y="800" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-15" value="0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="olk4RV9NaSBeg0otqcRm-8" target="olk4RV9NaSBeg0otqcRm-2" edge="1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint x="580" y="610" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="120" y="550" />
+              <mxPoint x="120" y="550" />
+            </Array>
+            <mxPoint x="590" y="570" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-17" value="0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="olk4RV9NaSBeg0otqcRm-2" target="1dmnMxwKKWMNMVrGBrF0-2" edge="1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint x="239.99999999999997" y="360" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="220" y="200" />
+            </Array>
+            <mxPoint x="239.99999999999997" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-19" value="0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="olk4RV9NaSBeg0otqcRm-5" target="olk4RV9NaSBeg0otqcRm-2" edge="1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint x="370.03" y="450" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="430" y="440" />
+              <mxPoint x="430" y="440" />
+            </Array>
+            <mxPoint x="370.03" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="olk4RV9NaSBeg0otqcRm-2" target="6sMr20MLQL879UBYeH91-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="520" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="200" y="720" />
+            </Array>
+            <mxPoint x="120" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olk4RV9NaSBeg0otqcRm-22" value="3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="olk4RV9NaSBeg0otqcRm-21" vertex="1" connectable="0">
+          <mxGeometry x="-0.6117" y="-1" relative="1" as="geometry">
+            <mxPoint x="131" y="129" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6sMr20MLQL879UBYeH91-2" value="Menu Gerir Fornecedores:&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 - Adicionar Fornecedor&lt;div&gt;2 - Remover Fornecedor&lt;br&gt;&lt;/div&gt;&lt;div&gt;3 - Ver Fornecedores&lt;/div&gt;&lt;div&gt;4 - Realizar uma encomenda&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;5- Ver Encomendas realizadas&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;0 - Voltar" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;" parent="1" vertex="1">
+          <mxGeometry x="480" y="590" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="6sMr20MLQL879UBYeH91-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="olk4RV9NaSBeg0otqcRm-2" target="olk4RV9NaSBeg0otqcRm-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="490" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="160" y="650" />
+              <mxPoint x="160" y="650" />
+            </Array>
+            <mxPoint x="230" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6sMr20MLQL879UBYeH91-4" value="2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6sMr20MLQL879UBYeH91-3" vertex="1" connectable="0">
+          <mxGeometry x="-0.6117" y="-1" relative="1" as="geometry">
+            <mxPoint x="11" y="97" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6sMr20MLQL879UBYeH91-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="olk4RV9NaSBeg0otqcRm-2" target="6sMr20MLQL879UBYeH91-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="490" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="240" y="640" />
+            </Array>
+            <mxPoint x="490" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6sMr20MLQL879UBYeH91-6" value="0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6sMr20MLQL879UBYeH91-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.6117" y="-1" relative="1" as="geometry">
+            <mxPoint x="111" y="72" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

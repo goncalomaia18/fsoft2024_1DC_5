@@ -1,0 +1,16 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. Insere o nome de utilizador e palavra-passe
+Sistema -> Sistema: 1.1 Verifica se as credenciais são verdadeiras
+
+alt Sessão iniciada
+     Sistema --> Gerente: Retorna sucesso
+
+else Sessão não iniciada
+     Sistema --> Gerente: Pede para reintroduzir as credenciais
+
+end
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. O Mecânico insere a opção de ver Fornecedores
+Sistema --> Gerente: 1.2 O sistema mostra uma lista com os Fornecedores
+
+alt Ver Fornecedores: true
+     Sistema --> Gerente: Retorna sucesso
+
+else Ver Fornecedores: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

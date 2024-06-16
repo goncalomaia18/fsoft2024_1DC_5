@@ -1,0 +1,16 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. O Mecânico insere a opção de ver Mecânicos
+Sistema --> Gerente: 1.2 O sistema mostra uma lista com os Mecânicos
+
+alt Ver Mecânicos: true
+     Sistema --> Gerente: Retorna sucesso
+
+else Ver Mecânicos: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

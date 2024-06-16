@@ -1,0 +1,17 @@
+@startuml
+actor Gerente
+participant Sistema
+
+
+Gerente -> Sistema: 1. O Mecânico insere a opção de ver inventário
+Sistema -> Sistema: 1.1 Verifica se existe inventário
+Sistema --> Gerente: 1.2 O sistema mostra uma lista com o inventário
+
+alt Ver inventário: true
+     Sistema --> Gerente: Retorna sucesso
+
+else Ver inventário: false
+     Sistema --> Gerente: Retorna erro
+
+end
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor "Mecânico" as mc
+rectangle  {
+  usecase "Iniciar Sessão" as UC1
+  usecase "Adicionar Material" as UC2
+  usecase "Remover Material" as UC3
+  usecase "Ver inventário" as UC4
+  usecase "Encerrar Sessão" as UC5
+}
+mc --> UC1
+mc --> UC2
+mc --> UC3
+mc --> UC4
+mc --> UC5
+@enduml
