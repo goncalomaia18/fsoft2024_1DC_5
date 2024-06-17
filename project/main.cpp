@@ -1,5 +1,4 @@
 #include <iostream>
-#include "stdio.h"
 #include "ManagerInventory.h"
 #include "MockData.h"
 #include "Controller.h"
